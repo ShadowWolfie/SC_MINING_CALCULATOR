@@ -1,17 +1,17 @@
 import os
-import math
-import subprocess
-import sys
+#import subprocess
+#import sys
 
 #console clear
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
 
 #install modules(WIP)
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+#def install(package):
+#    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 end = 1
+
 #unit calculation
 def unit():
     Hadanite = 0.0
