@@ -50,9 +50,9 @@ percent_or_unit = 0
 choice = input("what would you like to calculate?")
 clear()
 
-if choice == "1":
+if choice == "0":
     unit()
-elif choice == "2":
+elif choice == "1":
     print("elif")
 else:
     print("nope")
