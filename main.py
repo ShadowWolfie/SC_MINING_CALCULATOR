@@ -3,6 +3,8 @@ import tkinter as tk
 #import subprocess
 #import sys
 
+tk._test()
+
 #console clear
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
