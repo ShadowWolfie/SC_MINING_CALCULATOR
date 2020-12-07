@@ -1,8 +1,15 @@
 import os
 import math
+import subprocess
+import sys
 
+#console clear
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
+
+#install modules(WIP)
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 end = 1
 #unit calculation
@@ -20,15 +27,15 @@ def unit():
         if ore == "0":
             amount = 0
             amount = float(input("how much did you farm?"))
-            Hadanite = Hadanite + amount
+            Hadanite =  amount
         elif ore == "1":
             amount = 0
             amount = str(input("how much did you farm?"))
-            Aphorite = Aphorite + amount
+            Aphorite = amount
         elif ore == "2":
             amount = 0
             amount = int(input("how much did you farm?"))
-            Dolovine = Dolovine + amount
+            Dolovine = amount
         else:
             print("not applicable")
 
@@ -36,10 +43,13 @@ def unit():
         Price_aph = Aphorite * 150
         Price_dol = Dolovine * 130
         Price_full = Price_had + Price_aph + Price_dol
-
+        print("price Hadernite")
         print(Price_had)
+        print("price Aphorite")
         print(Price_aph)
+        print("price olovine")
         print(Price_dol)
+        print("total")
         print(Price_full)
 
 #if percent calculation is wanted or units
